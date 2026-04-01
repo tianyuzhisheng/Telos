@@ -3,33 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Telos 天育之声 | 首页</title>
+    <title>Telos 天育之声 | 追求真理 建立生命</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&display=swap" rel="stylesheet">
     <style>
-        body { background-color: #fdfaf5; }
+        body { background-color: #fdfaf5; font-family: 'Inter', -apple-system, sans-serif; }
+        .serif { font-family: 'Noto Serif SC', serif; }
         .bg-navy { background-color: #0a192f; }
         .text-gold { color: #c5a059; }
+        .nav-link { transition: all 0.3s; position: relative; }
+        .nav-link:hover { color: #c5a059; }
+        .nav-link:hover::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 100%; height: 2px; background: #c5a059; }
     </style>
 </head>
-<body>
-    <nav class="bg-navy text-white py-5 px-6">
-        <div class="container mx-auto flex justify-between items-center">
-            <div class="text-2xl font-bold text-gold">TELOS 天育之声</div>
-            <div class="space-x-8 font-bold text-sm">
-                <a href="./index.html" class="hover:text-gold">首页</a>
-                <a href="./videos.html" class="hover:text-gold border-b-2 border-gold">视频资源</a>
-                <a href="#" class="hover:text-gold">机构介绍</a>
-                <a href="#" class="hover:text-gold">联系我们</a>
+<body class="min-h-screen flex flex-col">
+
+    <nav class="bg-navy text-white sticky top-0 z-50 shadow-2xl border-b border-white/10">
+        <div class="container mx-auto px-8 py-6 flex justify-between items-center">
+            <div class="text-3xl font-bold tracking-tighter serif text-gold">TELOS 天育之声</div>
+            <div class="hidden lg:flex space-x-10 text-sm font-semibold tracking-widest uppercase">
+                <a href="index.html" class="nav-link text-gold">首页</a>
+                <a href="news.html" class="nav-link">最新消息</a>
+                <a href="videos.html" class="nav-link">视频资源</a>
+                <a href="about.html" class="nav-link">机构介绍</a>
+                <a href="contact.html" class="nav-link">联系我们</a>
             </div>
         </div>
     </nav>
 
-    <section class="bg-navy py-20 text-center text-white">
-        <h1 class="text-4xl mb-8 serif-title">Telos 天育之声 介绍视频</h1>
-        <div class="max-w-4xl mx-auto aspect-video rounded-xl overflow-hidden shadow-2xl border-4 border-gray-800">
-            <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+    <section class="bg-navy py-24 px-6 relative overflow-hidden">
+        <div class="container mx-auto max-w-5xl text-center relative z-10">
+            <h2 class="text-gold tracking-[0.4em] text-xs mb-6 font-bold">INTRODUCING TELOS VOICES</h2>
+            <h1 class="text-white text-5xl md:text-6xl serif mb-12">追求真理，建立生命</h1>
+            <div class="aspect-video rounded-2xl shadow-[0_35px_60px_-15px_rgba(0,0,0,0.6)] overflow-hidden border-4 border-white/5 ring-1 ring-white/10">
+                <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="mt-16 max-w-2xl mx-auto">
+                <p class="text-gray-400 text-xl leading-relaxed font-light italic">
+                    “Telos 天育之声致力于在全球华人信徒中传播纯正真理，构建严谨的神学根基。”
+                </p>
+            </div>
         </div>
-        <p class="mt-8 text-gray-400">若点击上方“视频资源”显示404，请确认仓库中存在 videos.html 文件</p>
     </section>
+
+    <footer class="mt-auto bg-navy text-white/40 py-12 text-center text-xs tracking-widest border-t border-white/5">
+        &copy; 2026 TELOS VOICES. ALL RIGHTS RESERVED.
+    </footer>
+
 </body>
 </html>
