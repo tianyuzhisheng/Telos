@@ -3,73 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>生命真道：查经资源共享站</title>
+    <title>Telos 天育之声 | 追求真理 建立生命</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&display=swap" rel="stylesheet">
     <style>
-        /* 模拟温暖的米色/浅木质感背景 */
-        body {
-            background-color: #fdfaf5;
-            background-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png');
-            font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
-        }
-        .wood-border {
-            border-top: 8px solid #5d4037;
-        }
+        body { background-color: #f8f9fa; font-family: 'PingFang SC', sans-serif; }
+        .serif-title { font-family: 'Noto Serif SC', serif; }
+        .bg-navy { background-color: #0a192f; }
+        .text-gold { color: #c5a059; }
+        .btn-gold { background-color: #c5a059; color: white; }
+        .nav-link:hover { color: #c5a059; border-bottom: 2px solid #c5a059; }
     </style>
 </head>
-<body class="min-h-screen">
+<body>
 
-    <header class="wood-border bg-white shadow-sm py-8 px-4">
-        <div class="container mx-auto text-center">
-            <h1 class="text-4xl md:text-5xl font-bold text-[#5d4037] mb-2">生命真道</h1>
-            <p class="text-lg text-[#8d6e63] tracking-widest">查经资源共享站</p>
-        </div>
-    </header>
-
-    <main class="container mx-auto px-4 py-12">
-        <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden border border-orange-100">
-            
-            <div class="aspect-video bg-black relative">
-                <iframe class="absolute inset-0 w-full h-full" 
-                        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-                        title="YouTube video player" frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen></iframe>
-            </div>
-
-            <div class="p-8 text-center">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">本周深度查经：在基督里的丰盛</h2>
-                <p class="text-gray-600 mb-8 leading-relaxed">
-                    欢迎来到本周的查经学习。通过这段视频，我们将一起探讨神话语中的奥秘。
-                    点击下方按钮即可获取详细的查经指南和配套讲义。
-                </p>
-
-                <a href="#" class="inline-block bg-[#d4af37] hover:bg-[#b8962e] text-white text-xl font-bold py-4 px-10 rounded-full shadow-lg transform transition hover:scale-105 active:scale-95 mb-4">
-                    📥 下载本周查经讲义
-                </a>
-                <p class="text-sm text-gray-400 italic">文件格式：PDF | 大小：2.4MB</p>
+    <nav class="bg-navy text-white sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold tracking-tighter serif-title text-gold">TELOS 天育之声</div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#" class="nav-link">首页</a>
+                <a href="#news" class="nav-link">最新消息</a>
+                <div class="group relative">
+                    <button class="nav-link">视频资源 ▾</button>
+                    <div class="absolute hidden group-hover:block bg-white text-navy p-4 shadow-xl rounded w-48 mt-2 border-t-4 border-gold">
+                        <a href="#video-category" class="block py-2 hover:text-gold">查经视频</a>
+                        <a href="#video-category" class="block py-2 hover:text-gold">圣经疑难解答</a>
+                        <a href="#video-category" class="block py-2 hover:text-gold">系统神学</a>
+                        <a href="#video-category" class="block py-2 hover:text-gold">教会历史</a>
+                    </div>
+                </div>
+                <a href="#about" class="nav-link">机构介绍</a>
+                <a href="#contact" class="nav-link">联系我们</a>
             </div>
         </div>
-    </main>
+    </nav>
 
-    <section class="bg-[#5d4037] text-white py-12 px-4 mt-12">
-        <div class="container mx-auto max-w-2xl text-center">
-            <h3 class="text-2xl font-bold mb-6">联系我们 / 加入小组</h3>
-            <div class="flex flex-col md:flex-row justify-center items-center gap-8">
-                <div class="bg-white p-2 rounded-lg shadow-inner">
-                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=WeChatID" alt="WeChat QR" class="w-32 h-32">
-                </div>
-                <div class="text-left">
-                    <p class="text-lg mb-2 font-medium">微信扫码添加同工</p>
-                    <p class="text-orange-200">微信号：YourWeChatID_Here</p>
-                    <p class="text-sm text-orange-100/60 mt-4 italic">愿上帝的话语每日成为你的力量</p>
-                </div>
+    <section class="bg-navy py-20 px-6">
+        <div class="container mx-auto max-w-5xl text-center">
+            <h2 class="text-gold text-sm tracking-widest mb-4 uppercase">追求卓越 · 传承真理</h2>
+            <h1 class="text-white text-4xl md:text-6xl serif-title mb-10">Telos 天育之声 机构介绍</h1>
+            <div class="aspect-video rounded-xl shadow-2xl overflow-hidden border-4 border-[#1d2d44]">
+                <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
     </section>
 
-    <footer class="py-6 text-center text-gray-400 text-sm">
-        &copy; 2026 生命真道项目 · 纯手工打造的信仰基地
+    <section id="video-category" class="py-20 container mx-auto px-6">
+        <div class="flex items-center justify-between mb-12 border-b border-gray-200 pb-4">
+            <h2 class="text-3xl serif-title text-navy">视频资源库</h2>
+            <span class="text-gray-400 text-sm">EXPLORE RESOURCES</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="bg-white p-8 border-t-4 border-gold shadow-sm hover:shadow-xl transition group">
+                <h3 class="text-xl font-bold mb-4 group-hover:text-gold">查经视频</h3>
+                <p class="text-gray-500 text-sm mb-6">逐章逐节剖析经文，回归圣经文本的原意。</p>
+                <a href="#" class="text-navy font-bold text-xs tracking-widest border-b-2 border-navy">立即进入 →</a>
+            </div>
+            <div class="bg-white p-8 border-t-4 border-gold shadow-sm hover:shadow-xl transition group">
+                <h3 class="text-xl font-bold mb-4 group-hover:text-gold">圣经疑难解答</h3>
+                <p class="text-gray-500 text-sm mb-6">直面信仰困惑，提供基于真理的理性辩证。</p>
+                <a href="#" class="text-navy font-bold text-xs tracking-widest border-b-2 border-navy">立即进入 →</a>
+            </div>
+            <div class="bg-white p-8 border-t-4 border-gold shadow-sm hover:shadow-xl transition group">
+                <h3 class="text-xl font-bold mb-4 group-hover:text-gold">系统神学</h3>
+                <p class="text-gray-600 text-sm mb-6">构建全备的信仰根基，体察教义的严谨之美。</p>
+                <a href="#" class="text-navy font-bold text-xs tracking-widest border-b-2 border-navy">立即进入 →</a>
+            </div>
+            <div class="bg-white p-8 border-t-4 border-gold shadow-sm hover:shadow-xl transition group">
+                <h3 class="text-xl font-bold mb-4 group-hover:text-gold">教会历史</h3>
+                <p class="text-gray-500 text-sm mb-6">纵览两千年恩典足迹，在历史中看见上帝的掌权。</p>
+                <a href="#" class="text-navy font-bold text-xs tracking-widest border-b-2 border-navy">立即进入 →</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-gray-100 px-6">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="text-3xl serif-title text-navy mb-8">关于 TELOS 天育之声</h2>
+            <div class="grid md:grid-cols-2 gap-12 text-left text-gray-700 leading-relaxed">
+                <div>
+                    <h4 class="font-bold text-navy mb-2">机构异像</h4>
+                    <p class="text-sm">致力于通过高品质多媒体内容，为全球华人信徒提供深度神学教育支持。</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-navy mb-2">牧师简介</h4>
+                    <p class="text-sm">本机构由资深牧职同工团队带领，专注真理传讲与门徒训练。</p>
+                </div>
+            </div>
+            <button class="mt-10 btn-gold px-8 py-3 rounded text-sm tracking-widest font-bold">了解更多机构历史</button>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 container mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12">
+            <div>
+                <h2 class="text-3xl serif-title text-navy mb-6">联系我们</h2>
+                <div class="space-y-4 text-gray-600">
+                    <p>📍 地址：北美某某大街 123 号 (Telos Center)</p>
+                    <p>📞 电话：+1 (123) 456-7890</p>
+                    <p>✉️ Email: info@telosvoice.org</p>
+                </div>
+            </div>
+            <div class="bg-gray-200 rounded-xl h-64 flex items-center justify-center text-gray-400">
+                [ Google Map 交互地图占位 ]
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-navy text-white py-12 text-center border-t border-gray-800">
+        <p class="text-xs tracking-widest text-gray-500 mb-4">&copy; 2026 TELOS VOICES. ALL RIGHTS RESERVED.</p>
+        <div class="flex justify-center space-x-6 text-xl">
+            <span>微信</span><span>YouTube</span><span>Facebook</span>
+        </div>
     </footer>
 
 </body>
